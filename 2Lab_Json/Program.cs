@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
@@ -38,7 +39,7 @@ namespace lab2
             }
             Fractions FF = new Fractions(4, 8);
             FF.Save();
-
+           
             FF.Write();
 
 
@@ -111,6 +112,7 @@ namespace lab2
                 Console.WriteLine(Js);
                 File.WriteAllText(@"D:\fract.json", Js);
             }
+           
 
         }
 
